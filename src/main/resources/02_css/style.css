@@ -1,0 +1,12 @@
+/* CSS Comment */
+p {
+    color: darksalmon;
+}
+
+.special_paragraph {
+    text-decoration: underline;
+}
+
+#unique_paragraph1 {
+    text-decoration: line-through;
+}
