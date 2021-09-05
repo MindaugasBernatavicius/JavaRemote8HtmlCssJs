@@ -11,6 +11,9 @@
     <!--</style>-->
 
     <!-- External style sheet -->
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
@@ -48,12 +51,97 @@
 
     <!-- Properties -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+        html {
+            font-size: 200%;
+        }
+        body {
+            /*background-image: url('https://images4.fanpop.com/image/photos/21800000/Beautiful-Sunset-beautiful-nature-21887669-800-475.jpg');*/
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            /*background-size: cover; !* Resize the background image to cover the entire container *!*/
+            /*background-size: auto;*/
+            /*background-size: 100vw 200vh;*/
+            height: 150vh;
+        }
         p {
             /*color: red;*/
-            color: rgba(255, 0, 125, 0.0);
+            color: rgba(255, 0, 125, 0.3);
             background-color: greenyellow;
+            border: 2px dashed black;
+            text-align: center;
+            font-weight: bolder;
+            font-style: oblique;
+            font-family: 'Indie Flower', cursive;
+            font-size: 20px;
         }
+
+        ul {
+            list-style: none;
+        }
+        .not-important-text {
+            font-size: 0.5rem;
+        }
+
+
+        .box {
+            /*padding: 10px*/
+            /*padding-top: 10px;*/
+            /*padding-right: 20px;*/
+            /*padding-bottom: 30px;*/
+            /*padding-left: 40px;*/
+            padding: 10px 20px;
+            margin: 10px 20px;
+            box-sizing: border-box;
+            display: inline-block;
+            float: right;
+        }
+
     </style>
     <p>This is some paragraph</p>
+
+    <ul>
+        <li class="not-important-text">Batonas</li>
+        <li class="not-important-text">Kefyras</li>
+    </ul>
+
+    <p class="not-important-text">This paragraph is also not important</p>
+
+    <!--<div style="background-color: red; width: 10vw; height: 10vh">-->
+    <!--    ..-->
+    <!--</div>-->
+    <!--<div class="box" style="background-color: darkorange; width: 100px; height: 100px">-->
+    <!--    ..-->
+    <!--</div>-->
+    <!--<div class="box" style="background-color: darkorange; width: 100px; height: 100px">-->
+    <!--    ..-->
+    <!--</div>-->
+
+
+    <style>
+        .father {
+            background-color: orange;
+            height: 200px;
+            position: relative;
+        }
+        .child-red {
+            background-color: red;
+            height: 50px;
+            position: fixed;
+            left: 30px; /* 30px offset from the left */
+            top: 30px; /* 30px offset from the top */
+            width: 50%;
+        }
+        .child-blue {
+            background-color: blue;
+            height: 50px;
+        }
+    </style>
+    <div class="father">
+        <div class="child-red">Lorem ipsum dolor sit amet, psam ab facere dolorum</div>
+        <div class="child-blue">Lorem ipsum dolor </div>
+    </div>
+
 </body>
 </html>

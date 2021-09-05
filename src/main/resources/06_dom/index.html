@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>Hi!</p>
+    <p class="regular_hello">Hello!</p>
+    <p id="excited_hello">Hello there!</p>
+
+    <button onclick="clickHandler()">Click me!</button>
+
+    <script>
+      let paragraphByTag = document.getElementsByTagName("p");
+      let paragraphByClass = document.getElementsByClassName("regular_hello");
+      let paragraphById = document.getElementById("excited_hello");
+      let paragraphByCssSelector = document.querySelector("#excited_hello");
+
+      console.log(paragraphByTag[0]);
+      console.log(paragraphByClass[0]);
+      console.log(paragraphById);
+      console.log(paragraphByCssSelector);
+
+      paragraphById.style.color = "blue";
+
+      let child = document.createElement("p");
+      child.innerText = "Some text in paragraph";
+      paragraphById.appendChild(child);
+
+      let counter = 1;
+      paragraphById.addEventListener('click', () => {
+        console.log("Paragraph clicked " + counter + "");
+        counter++;
+      });
+
+      paragraphById.addEventListener('mouseover', () => {
+        console.log("Mouse is over the paragraph" + counter + "");
+        counter++;
+      });
+
+      let newCounter = 1;
+      function clickHandler(){
+        let prefix = "Clicked ";
+        document.getElementsByTagName('button')[0].innerText = prefix + newCounter;
+        newCounter++;
+      }
+    </script>
+</body>
+</html>

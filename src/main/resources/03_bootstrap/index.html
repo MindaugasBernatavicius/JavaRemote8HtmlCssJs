@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <style>
+          /*#myid {*/
+          /*  font-family: Arial, Helvetica, sans-serif;*/
+          /*  border-collapse: collapse;*/
+          /*  width: 100%;*/
+          /*}*/
+
+          /*#myid td, #myid th {*/
+          /*  border: 1px solid #ddd;*/
+          /*  padding: 8px;*/
+          /*}*/
+
+          /*#myid tr:nth-child(even){background-color: #f2f2f2;}*/
+
+          /*#myid tr:hover {background-color: #ddd;}*/
+
+          /*#myid th {*/
+          /*  padding-top: 12px;*/
+          /*  padding-bottom: 12px;*/
+          /*  text-align: left;*/
+          /*  background-color: #04AA6D;*/
+          /*  color: white;*/
+          /*}*/
+        </style>
+    </head>
+    <body>
+      <br>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">Customer table:</div>
+          <div class="card-body">
+            <table id="myid" class="table">
+              <thead>
+              <tr><th>Id</th><th>Name</th><th>Salary</th></tr>
+              </thead>
+              <tbody>
+              <tr><td>1</td><td>Mindaugas</td><td>1500€</td></tr>
+              <tr><td>2</td><td>Jonas</td><td>1500€</td></tr>
+              <tr><td>3</td><td>Jonas</td><td>1500€</td></tr>
+              </tbody>
+            </table>
+            <span class="badge bg-secondary">New</span>
+            <button type="button" class="btn btn-primary">
+              Notifications <span class="badge bg-secondary">4</span>
+            </button>
+            <button type="button" class="btn btn-primary position-relative">
+              Inbox
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              999+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
